@@ -25,7 +25,7 @@ class EventArray
                 return true
             }
         }
-        //Reached end of array, no matching code
+        // Reached end of array, no matching code
         return false
     }
 }
@@ -33,7 +33,7 @@ class EventArray
 var ListOfEvents = EventArray()
 var CatDay = KCEvent(n: "Cat Appreciation Day", p: 100, c: 00001, m: 2, date: "03/01/2016")
 var DragonDay = KCEvent(n: "Dragon Appreciation Day", p: 1000, c: 00002, m:1, date: "11/30/2016")
-var MonkeyDay = KCEvent(n: "Monkey Appreciation Day", p: 50, c: 00003, m: 3, date: "8/12/2015")
+var MonkeyDay = KCEvent(n: "Monkey Appreciation Day", p: 50, c: 00003, m: 3, date: "8/12/2016")
 var Sacrifice = KCEvent(n: "Sacrifice the innocent", p: 20000, c: 00004, m: 5, date: "02/29/2016")
 
 func loadArray() -> Void

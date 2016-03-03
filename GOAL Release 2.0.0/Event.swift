@@ -46,6 +46,16 @@ class KCEvent
         self.eventDescription = desc
     }
     
+    func getName() -> String
+    {
+        return self.eventName
+    }
+    
+    func getDate() -> NSDate
+    {
+        return self.eventDate
+    }
+    
     func verifyCode(c: Int) -> Bool
     {
         if c == self.eventCode

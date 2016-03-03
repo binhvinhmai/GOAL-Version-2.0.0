@@ -74,8 +74,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKi-Te-8HZ">
-                                <rect key="frame" x="454" y="65" width="69" height="30"/>
+                                <rect key="frame" x="438" y="65" width="105" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.82812208047289482" blue="0.62764795587736333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="eb2-1b-iFz"/>
+                                </constraints>
                                 <state key="normal" title="get points">
                                     <color key="titleColor" red="1" green="0.3962912311994552" blue="0.2364814495778248" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -86,8 +89,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MKi-Te-8HZ" secondAttribute="trailing" constant="37" id="55K-lI-ben"/>
                             <constraint firstItem="cMb-vH-TZf" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="25" id="CrB-qU-pOp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="MKi-Te-8HZ" secondAttribute="trailing" constant="57" id="EBR-o0-oXg"/>
                             <constraint firstItem="MKi-Te-8HZ" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="45" id="VIb-2z-HJj"/>
                             <constraint firstItem="cMb-vH-TZf" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="45" id="oaf-86-eI1"/>
                         </constraints>
