@@ -8,7 +8,7 @@
 
 class EventArray
 {
-    var eventArray = [KCEvent]()
+    private var eventArray = [KCEvent]()
     
     func append(event: KCEvent) -> Void
     {

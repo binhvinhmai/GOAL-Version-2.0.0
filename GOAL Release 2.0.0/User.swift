@@ -8,6 +8,7 @@
 
 class goalUser
 {
+    // Variables
     private var totalPoints: Int = 0
     private var monthlyPoints: Int = 0
     func addPoints(newPoints: Int)

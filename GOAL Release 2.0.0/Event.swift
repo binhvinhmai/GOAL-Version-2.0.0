@@ -61,7 +61,7 @@ class KCEvent
     func checkVisits() -> Bool
     {
         let tempVisits = self.visits + 1
-        // If they've reached the number of allowable visits.
+        //If they've reached the number of allowable visits.
         if tempVisits >= self.maxVisits
         {
             return false
