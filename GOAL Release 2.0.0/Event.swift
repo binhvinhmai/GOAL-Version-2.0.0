@@ -38,7 +38,7 @@ class KCEvent
     
     func printDescription() -> String
     {
-        return eventDescription
+        return self.eventDescription
     }
     
     func setDescription(desc: String) -> Void

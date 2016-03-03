@@ -12,13 +12,13 @@ class goalUser
     private var monthlyPoints: Int = 0
     func addPoints(newPoints: Int)
     {
-        monthlyPoints+=newPoints
-        totalPoints+=newPoints
+        self.monthlyPoints+=newPoints
+        self.totalPoints+=newPoints
     }
     
     func resetMonth() -> Void
     {
-        monthlyPoints = 0;
+        self.monthlyPoints = 0;
     }
 }
 
