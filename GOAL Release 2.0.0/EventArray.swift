@@ -15,18 +15,31 @@ class EventArray
         eventArray.append(event)
     }
     
-    func verifyCode(c: Int, owner: goalUser) -> Bool
+    func verifyCode(c: Int, user: goalUser) -> Bool
     {
         for item in eventArray
         {
             if item.verifyCode(c) == true && item.checkVisits() == true
             {
-                owner.addPoints(c)
+                user.addPoints(c)
                 return true
             }
         }
         // Reached end of array, no matching code
         return false
+    }
+    
+    func findCode(code: Int) -> Int
+    {
+        for item in eventArray
+        {
+            if item.getCode() == code
+            {
+                return item.getPoints()
+            }
+        }
+        // If not found
+        return 0
     }
 }
 

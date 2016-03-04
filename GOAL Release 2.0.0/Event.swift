@@ -56,6 +56,16 @@ class KCEvent
         return self.eventDate
     }
     
+    func getCode() -> Int
+    {
+        return self.eventCode
+    }
+    
+    func getPoints() -> Int
+    {
+        return self.eventPoints
+    }
+    
     func verifyCode(c: Int) -> Bool
     {
         if c == self.eventCode
@@ -81,5 +91,6 @@ class KCEvent
             return true
         }
     }
+    
 }
 

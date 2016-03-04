@@ -8,19 +8,24 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+// Create global variables
+var owner = goalUser()
 
-    override func viewDidLoad() {
+class FirstViewController: UIViewController
+{
+    @IBOutlet weak var Userpoints: UILabel!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         //Do any additional setup after loading the view, typically from a nib.
+        Userpoints.text = ("\(owner.getTotal())")
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    
-
 }
 

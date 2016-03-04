@@ -20,7 +20,12 @@ class goalUser
     
     func resetMonth() -> Void
     {
-        self.monthlyPoints = 0;
+        self.monthlyPoints = 0
+    }
+    
+    func getTotal() -> Int
+    {
+        return self.totalPoints
     }
 }
 

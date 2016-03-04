@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75C25D8E1C8909DE00477430 /* PointsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C25D8D1C8909DE00477430 /* PointsWindow.swift */; };
 		75F77F4D1C87D95700F653A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F77F4C1C87D95700F653A3 /* AppDelegate.swift */; };
 		75F77F4F1C87D95800F653A3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F77F4E1C87D95800F653A3 /* FirstViewController.swift */; };
 		75F77F541C87D95800F653A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F77F521C87D95800F653A3 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75C25D8D1C8909DE00477430 /* PointsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsWindow.swift; sourceTree = "<group>"; };
 		75F77F491C87D95600F653A3 /* GOAL Release 2.0.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOAL Release 2.0.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F77F4C1C87D95700F653A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F77F4E1C87D95800F653A3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				75F77F4C1C87D95700F653A3 /* AppDelegate.swift */,
 				75F77F4E1C87D95800F653A3 /* FirstViewController.swift */,
+				75C25D8D1C8909DE00477430 /* PointsWindow.swift */,
 				75F77F7C1C87DBE500F653A3 /* User.swift */,
 				75F77F7E1C87DC5500F653A3 /* Event.swift */,
 				75F77F801C87DE1D00F653A3 /* EventArray.swift */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C25D8E1C8909DE00477430 /* PointsWindow.swift in Sources */,
 				75F77F811C87DE1D00F653A3 /* EventArray.swift in Sources */,
 				75F77F7F1C87DC5500F653A3 /* Event.swift in Sources */,
 				75F77F4D1C87D95700F653A3 /* AppDelegate.swift in Sources */,
