@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7508F1D11C8CD0D600A74D88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		75C25D8D1C8909DE00477430 /* PointsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsWindow.swift; sourceTree = "<group>"; };
 		75F77F491C87D95600F653A3 /* GOAL Release 2.0.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOAL Release 2.0.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F77F4C1C87D95700F653A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -316,6 +317,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				75F77F531C87D95800F653A3 /* Base */,
+				7508F1D11C8CD0D600A74D88 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

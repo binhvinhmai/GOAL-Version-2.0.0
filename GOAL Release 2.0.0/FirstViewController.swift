@@ -14,6 +14,10 @@ var owner = goalUser()
 class FirstViewController: UIViewController
 {
     @IBOutlet weak var Userpoints: UILabel!
+
+    @IBAction func UnWindAction(unwindSegue: UIStoryboardSegue)
+    {
+    }
     
     override func viewDidLoad()
     {

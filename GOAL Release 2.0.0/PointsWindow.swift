@@ -11,6 +11,10 @@ import UIKit
 class PointsWindow: UIViewController
 {
     
+    
+    
+    
+    /*
     @IBOutlet weak var codeDialogue: UILabel!
     @IBOutlet weak var codeInput: UITextField!
     
@@ -26,9 +30,17 @@ class PointsWindow: UIViewController
         {
             codeDialogue.text = "Code is not valid"
         }
+        // Code was found
         else
         {
             owner.addPoints(ListOfEvents.findCode(Int(codeInput.text!)!))
+            perform()
         }
     }
+    
+    func perform()
+    {
+        self.presentViewController(FirstViewController(), animated: false, completion: nil)
+    }
+*/
 }

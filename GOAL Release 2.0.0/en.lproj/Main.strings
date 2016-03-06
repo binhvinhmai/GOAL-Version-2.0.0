@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "9Pq-ub-BR5"; */
+"9Pq-ub-BR5.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Please enter the event code below:"; ObjectID = "I0R-Vx-bWk"; */
+"I0R-Vx-bWk.text" = "Please enter the event code below:";
+
+/* Class = "UIButton"; normalTitle = "get points"; ObjectID = "MKi-Te-8HZ"; */
+"MKi-Te-8HZ.normalTitle" = "get points";
+
+/* Class = "UILabel"; text = "  Upcoming Events"; ObjectID = "NVS-41-ZHc"; */
+"NVS-41-ZHc.text" = "  Upcoming Events";
+
+/* Class = "UITabBarItem"; title = "First"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "First";
+
+/* Class = "UILabel"; text = "User Points"; ObjectID = "cMb-vH-TZf"; */
+"cMb-vH-TZf.text" = "User Points";
+
+/* Class = "UIButton"; normalTitle = "Get points! "; ObjectID = "htZ-ao-3Kl"; */
+"htZ-ao-3Kl.normalTitle" = "Get points! ";
