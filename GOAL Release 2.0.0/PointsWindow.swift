@@ -12,6 +12,8 @@ class PointsWindow: UIViewController
 {
     
     
+    @IBOutlet weak var codeDialogue: UILabel!
+    @IBOutlet weak var codeInput: UITextField!
     
     
     /*
