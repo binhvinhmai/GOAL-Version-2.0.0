@@ -15,10 +15,12 @@ class PointsWindow: UIViewController
     @IBOutlet weak var codeDialogue: UILabel!
     @IBOutlet weak var codeInput: UITextField!
     
+    @IBAction func getPoints(sender: AnyObject)
+    {
+        
+    }
     
     /*
-    @IBOutlet weak var codeDialogue: UILabel!
-    @IBOutlet weak var codeInput: UITextField!
     
     @IBAction func getPoints(sender: AnyObject)
     {
@@ -38,11 +40,6 @@ class PointsWindow: UIViewController
             owner.addPoints(ListOfEvents.findCode(Int(codeInput.text!)!))
             perform()
         }
-    }
-    
-    func perform()
-    {
-        self.presentViewController(FirstViewController(), animated: false, completion: nil)
     }
 */
 }

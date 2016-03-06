@@ -49,9 +49,12 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ci8-Rb-SWs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ci8-Rb-SWs">
                                 <rect key="frame" x="476" y="65" width="90" height="30"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.30196078430000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="hSA-Uh-RPX"/>
+                                </constraints>
                                 <state key="normal" title="get points! ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -63,10 +66,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NVS-41-ZHc" firstAttribute="top" secondItem="cMb-vH-TZf" secondAttribute="bottom" constant="44" id="1o1-fo-tL2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ci8-Rb-SWs" secondAttribute="trailing" constant="14" id="7NV-Il-4Aa"/>
                             <constraint firstItem="cMb-vH-TZf" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="27" id="CrB-qU-pOp"/>
                             <constraint firstItem="NVS-41-ZHc" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="QjM-vc-1XG"/>
-                            <constraint firstItem="ci8-Rb-SWs" firstAttribute="leading" secondItem="cMb-vH-TZf" secondAttribute="trailing" constant="324" id="j2L-hv-Gdj"/>
-                            <constraint firstItem="NVS-41-ZHc" firstAttribute="top" secondItem="ci8-Rb-SWs" secondAttribute="bottom" constant="44" id="o80-n4-tYs"/>
+                            <constraint firstItem="ci8-Rb-SWs" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="45" id="ic8-x7-PIT"/>
                             <constraint firstItem="cMb-vH-TZf" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="54" id="oaf-86-eI1"/>
                         </constraints>
                     </view>
@@ -114,6 +117,9 @@
                                 <state key="normal" title="Get points! ">
                                     <color key="titleColor" red="1" green="0.39458076149999999" blue="0.32654243500000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="getPoints:" destination="28n-Mq-0q9" eventType="touchUpInside" id="922-IH-ckq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-ub-BR5">
                                 <rect key="frame" x="344" y="249" width="90" height="30"/>
