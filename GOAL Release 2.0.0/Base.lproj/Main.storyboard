@@ -119,6 +119,7 @@
                                 </state>
                                 <connections>
                                     <action selector="getPoints:" destination="28n-Mq-0q9" eventType="touchUpInside" id="922-IH-ckq"/>
+                                    <segue destination="9pv-A4-QxB" kind="show" identifier="PointsAchieved" id="10A-qW-Cv2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pq-ub-BR5">
@@ -180,4 +181,7 @@
     <resources>
         <image name="first" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="10A-qW-Cv2"/>
+    </inferredMetricsTieBreakers>
 </document>

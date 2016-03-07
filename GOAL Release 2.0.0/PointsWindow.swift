@@ -10,9 +10,6 @@ import UIKit
 
 class PointsWindow: UIViewController
 {
-    
-    
-    
     @IBOutlet weak var codeDialogue: UILabel!
     @IBOutlet weak var codeInput: UITextField!
     
@@ -29,27 +26,7 @@ class PointsWindow: UIViewController
         else if (ListOfEvents.verifyCode(Int(self.codeInput.text!)!, user: owner) == true)
        {
             self.codeDialogue.text? = "Code is valid!"
-
+        //performSegueWithIdentifier("PointsAchieved", sender: FirstViewController)
         }
     }
-    
-    
-    /*
-    
-    @IBAction func getPoints(sender: AnyObject)
-    {
-
-        // Code was not found
-        else if (ListOfEvents.verifyCode(Int(codeInput.text!)!, user: owner) == false)
-        {
-            codeDialogue.text = "Code is not valid"
-        }
-        // Code was found
-        else
-        {
-            owner.addPoints(ListOfEvents.findCode(Int(codeInput.text!)!))
-            perform()
-        }
-    }
-*/
 }
