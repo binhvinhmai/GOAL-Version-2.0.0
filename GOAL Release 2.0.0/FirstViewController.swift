@@ -24,6 +24,7 @@ class FirstViewController: UIViewController
         super.viewDidLoad()
         //Do any additional setup after loading the view, typically from a nib.
         Userpoints.text = ("\(owner.getTotal())")
+        loadArray() // Create data, will have to be deleted later. 
     }
 
     override func didReceiveMemoryWarning()

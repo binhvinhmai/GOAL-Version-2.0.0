@@ -36,6 +36,8 @@ class KCEvent
         self.eventDate = formatter.dateFromString(date)!
     }
     
+    // Getters and setters
+    
     func printDescription() -> String
     {
         return self.eventDescription
@@ -66,6 +68,8 @@ class KCEvent
         return self.eventPoints
     }
     
+    // Action functions
+    
     func verifyCode(c: Int) -> Bool
     {
         if c == self.eventCode
@@ -90,6 +94,11 @@ class KCEvent
         {
             return true
         }
+    }
+    
+    func addVisits() -> Void
+    {
+        self.visits+=1
     }
     
 }
