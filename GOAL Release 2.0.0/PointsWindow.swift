@@ -15,18 +15,18 @@ class PointsWindow: UIViewController
     
     @IBAction func getPoints(sender: AnyObject)
     {
-       if self.codeInput.text?.isEmpty == true
-       {
+        if self.codeInput.text?.isEmpty == true
+        {
             self.codeDialogue.text = "Please enter a valid code"
         }
         else if (ListOfEvents.verifyCode(Int(self.codeInput.text!)!, user: owner) == false)
-       {
+        {
             self.codeDialogue.text? = "Code is not valid"
         }
         else if (ListOfEvents.verifyCode(Int(self.codeInput.text!)!, user: owner) == true)
-       {
+        {
             self.codeDialogue.text? = "Code is valid!"
-        //performSegueWithIdentifier("PointsAchieved", sender: FirstViewController)
+            //performSegueWithIdentifier("PointsAchieved", sender: FirstViewController)
         }
     }
 }
