@@ -6,6 +6,8 @@
 //  Copyright © 2016 Binh Vinh Mai. All rights reserved.
 //
 
+import UIKit
+
 class EventArray
 {
     private var eventArray = [KCEvent]()
