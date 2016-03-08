@@ -23,8 +23,6 @@ class EventArray
             {
                 user.addPoints(item.getPoints())
                 item.addVisits()
-                // Finds code but doesn't add points to user
-                print(user.getTotal())
                 return true
             }
         }

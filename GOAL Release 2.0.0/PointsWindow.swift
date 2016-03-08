@@ -26,7 +26,8 @@ class PointsWindow: UIViewController
         else if (ListOfEvents.verifyCode(Int(self.codeInput.text!)!, user: owner) == true)
         {
             self.codeDialogue.text? = "Code is valid!"
-            //performSegueWithIdentifier("PointsAchieved", sender: FirstViewController)
+            // ERROR - all other options allow the user to go back to screen. 
+            self.performSegueWithIdentifier("PointsAchieved", sender: self)
         }
     }
 }

@@ -19,6 +19,12 @@ class FirstViewController: UIViewController
     {
     }
     
+    func refresh(sender:AnyObject)
+    {
+        // Update data
+        self.Userpoints.reloadInputViews()
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -32,5 +38,6 @@ class FirstViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 }
 
