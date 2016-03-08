@@ -10,6 +10,10 @@ import UIKit
 
 class KCEventTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet weak var eventLocationLabel: UILabel!
+    @IBOutlet weak var eventDateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
