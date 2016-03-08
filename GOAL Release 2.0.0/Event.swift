@@ -16,6 +16,7 @@ class KCEvent
     private var eventPoints: Int
     private var eventCode: Int
     private var eventDate: NSDate
+    private var eventLocation: String = ""
     private var maxVisits: Int //Each event may have a set limit
     
     // Variables set to default

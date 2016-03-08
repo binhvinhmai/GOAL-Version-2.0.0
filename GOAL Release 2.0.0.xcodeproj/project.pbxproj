@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		758323731C8F36C1003621B4 /* KCEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758323701C8F326E003621B4 /* KCEventTableViewCell.swift */; };
 		75C25D8E1C8909DE00477430 /* PointsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C25D8D1C8909DE00477430 /* PointsWindow.swift */; };
 		75F77F4D1C87D95700F653A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F77F4C1C87D95700F653A3 /* AppDelegate.swift */; };
 		75F77F4F1C87D95800F653A3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F77F4E1C87D95800F653A3 /* FirstViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		7508F1D11C8CD0D600A74D88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		758323701C8F326E003621B4 /* KCEventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCEventTableViewCell.swift; sourceTree = "<group>"; };
 		75C25D8D1C8909DE00477430 /* PointsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointsWindow.swift; sourceTree = "<group>"; };
 		75F77F491C87D95600F653A3 /* GOAL Release 2.0.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GOAL Release 2.0.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F77F4C1C87D95700F653A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				75F77F7C1C87DBE500F653A3 /* User.swift */,
 				75F77F7E1C87DC5500F653A3 /* Event.swift */,
 				75F77F801C87DE1D00F653A3 /* EventArray.swift */,
+				758323701C8F326E003621B4 /* KCEventTableViewCell.swift */,
 				75F77F521C87D95800F653A3 /* Main.storyboard */,
 				75F77F551C87D95900F653A3 /* Assets.xcassets */,
 				75F77F571C87D95900F653A3 /* LaunchScreen.storyboard */,
@@ -276,6 +279,7 @@
 				75F77F811C87DE1D00F653A3 /* EventArray.swift in Sources */,
 				75F77F7F1C87DC5500F653A3 /* Event.swift in Sources */,
 				75F77F4D1C87D95700F653A3 /* AppDelegate.swift in Sources */,
+				758323731C8F36C1003621B4 /* KCEventTableViewCell.swift in Sources */,
 				75F77F4F1C87D95800F653A3 /* FirstViewController.swift in Sources */,
 				75F77F7D1C87DBE500F653A3 /* User.swift in Sources */,
 			);
