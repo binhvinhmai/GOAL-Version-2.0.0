@@ -11,7 +11,7 @@ import UIKit
 // Create global variables
 var owner = goalUser()
 
-class FirstViewController: UIViewController
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     @IBOutlet weak var Userpoints: UILabel!
 
@@ -37,6 +37,21 @@ class FirstViewController: UIViewController
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return 0;
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        return UITableViewCell();
+    }
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        
     }
 
 }

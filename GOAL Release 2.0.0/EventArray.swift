@@ -19,14 +19,16 @@ class EventArray
     
     func verifyCode(c: Int, user: goalUser) -> Bool
     {
-        for item in self.eventArray
+        var count = 0
+        for _ in self.eventArray
         {
-            if item.getCode() == c && item.checkVisits() == true
+            if self.eventArray[count].getCode() == c && self.eventArray[count].checkVisits() == true
             {
-                user.addPoints(item.getPoints())
-                item.addVisits()
+                user.addPoints(self.eventArray[count].getPoints())
+                self.eventArray[count].addVisits()
                 return true
             }
+            count++
         }
         // Reached end of array, no matching code
         return false
@@ -34,12 +36,14 @@ class EventArray
     
     func findCode(code: Int) -> Int
     {
-        for item in self.eventArray
+        var count = 0
+        for _ in self.eventArray
         {
-            if item.getCode() == code
+            if self.eventArray[count].getCode() == code
             {
-                return item.getPoints()
+                return self.eventArray[count].getPoints()
             }
+            count++
         }
         // If not found
         return 0
@@ -55,7 +59,6 @@ var Sacrifice = KCEvent(n: "Sacrifice the innocent", p: 20000, c: 00004, m: 5, d
 func loadArray() -> Void
 {
     ListOfEvents.append(CatDay)
-    print(CatDay.getCode())
     ListOfEvents.append(DragonDay)
     ListOfEvents.append(MonkeyDay)
     ListOfEvents.append(Sacrifice)
