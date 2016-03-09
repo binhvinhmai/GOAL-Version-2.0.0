@@ -14,6 +14,7 @@ var owner = goalUser()
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     @IBOutlet weak var Userpoints: UILabel!
+    @IBOutlet weak var eventTableView: UITableView!
 
     @IBAction func UnWindAction(unwindSegue: UIStoryboardSegue)
     {
@@ -30,9 +31,10 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         //Do any additional setup after loading the view, typically from a nib.
         Userpoints.text = ("\(owner.getTotal())")
-        loadArray() // Create data, will have to be deleted later. 
+        loadArray() // Create data, will have to be deleted later.
+        //self.eventTableView.reloadData()
     }
-
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
@@ -52,10 +54,12 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // and we downcast it as a KCEventTableViewCell
         let event = ListOfEvents.eventArray[indexPath.row]
         
-        cell.eventNameLabel.text = event.getName()
+        cell.eventNameLabel.text = ("\(event.getName())")
         cell.eventDetailLabel.text = ("\(event.getLocation())\t\(event.getDate())")
         
         // Configure cell
+        // ERROR SHOULD PROBABLY BE SOMEWHERE HERE OR IN THE CONSTRAINTS
+        
         return cell
     }
     
