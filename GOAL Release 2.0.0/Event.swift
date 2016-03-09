@@ -70,6 +70,16 @@ class KCEvent
         return self.eventPoints
     }
     
+    func getLocation() ->String
+    {
+        return self.eventLocation
+    }
+    
+    func setLocation(place: String) ->Void
+    {
+        self.eventLocation = place
+    }
+    
     // Action functions
     
     func verifyCode(c: Int) -> Bool

@@ -41,12 +41,22 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 0;
+        return ListOfEvents.size()
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        return UITableViewCell();
+        let cellIdentifier = "KCEventTableViewCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! KCEventTableViewCell
+        // Above text - we first get the cell to use the reuseCellIdentifier
+        // and we downcast it as a KCEventTableViewCell
+        let event = ListOfEvents.eventArray[indexPath.row]
+        
+        cell.eventNameLabel.text = event.getName()
+        cell.eventDetailLabel.text = ("\(event.getLocation())\t\(event.getDate())")
+        
+        // Configure cell
+        return cell
     }
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath)

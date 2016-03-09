@@ -10,11 +10,17 @@ import UIKit
 
 class EventArray
 {
-    private var eventArray = [KCEvent]()
+    var eventArray = [KCEvent]()
     
     func append(event: KCEvent) -> Void
     {
         self.eventArray.append(event)
+    }
+    
+    func size() -> Int
+    {
+        return self.eventArray.count
+        
     }
     
     func verifyCode(c: Int, user: goalUser) -> Bool
@@ -58,6 +64,10 @@ var Sacrifice = KCEvent(n: "Sacrifice the innocent", p: 20000, c: 00004, m: 5, d
 
 func loadArray() -> Void
 {
+    CatDay.setLocation("Binh's house")
+    DragonDay.setLocation("Nelson-Atkins Art Museum")
+    MonkeyDay.setLocation("Zoo")
+    Sacrifice.setLocation("Hamburger Mary's")
     ListOfEvents.append(CatDay)
     ListOfEvents.append(DragonDay)
     ListOfEvents.append(MonkeyDay)
