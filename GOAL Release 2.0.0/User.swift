@@ -29,5 +29,10 @@ class goalUser
     {
         return self.totalPoints
     }
+    
+    func getMonthlyTotal() -> Int
+    {
+        return self.monthlyPoints; 
+    }
 }
 

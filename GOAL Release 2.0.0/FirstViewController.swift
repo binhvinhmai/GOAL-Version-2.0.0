@@ -32,7 +32,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         //Do any additional setup after loading the view, typically from a nib.
         Userpoints.text = ("\(owner.getTotal())")
         loadArray() // Create data, will have to be deleted later.
-        //self.eventTableView.reloadData()
+        ////self.eventTableView.reloadData()
     }
     
     override func didReceiveMemoryWarning()
@@ -54,8 +54,18 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // and we downcast it as a KCEventTableViewCell
         let event = ListOfEvents.eventArray[indexPath.row]
         
+        if let label = cell.eventNameLabel
+        {
+            label.text? = ("\(event.getName())")
+        }
+        
+        if let detailLabel = cell.eventDetailLabel
+        {
+            detailLabel.text? = ("\(event.getLocation())\t\(event.getDate())")
+        }
+        /*
         cell.eventNameLabel.text = ("\(event.getName())")
-        cell.eventDetailLabel.text = ("\(event.getLocation())\t\(event.getDate())")
+        cell.eventDetailLabel.text = ("\(event.getLocation())\t\(event.getDate())")*/
         
         // Configure cell
         // ERROR SHOULD PROBABLY BE SOMEWHERE HERE OR IN THE CONSTRAINTS
@@ -69,4 +79,3 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
 }
-
